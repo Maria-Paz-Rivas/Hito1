@@ -1,0 +1,152 @@
+body {
+    background-color: coral;
+}
+
+img {
+    height: 250px;
+    width: 230px;
+    align-items: center;
+}
+
+
+#titulos {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5em;
+        color: white;
+        width: 60vw;
+        margin: auto;
+        padding: 1.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1em;
+    }
+
+
+#principal {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+
+.personal{
+    background-color: grey;
+    color: white;
+    border: 2px solid white;
+    width: 85vw;
+    margin: 20px 20px 20px 80px;
+    padding: 10px;
+    border-radius: 2em;
+    display: flex; 
+    justify-content: center;
+}
+
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    margin-top: 1em;
+}
+
+
+.cards{
+   border: 2px solid grey;
+   height: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   flex-direction: column; 
+}
+
+
+.cards:hover{ 
+    background-color: white;
+}
+
+
+#cards-container{
+    width: 85vw;
+    margin: auto;
+    margin-top: 1.5em;
+    padding: 2em;
+    border-radius: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+p {
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    margin: 2em;
+}
+
+
+.title {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+}
+
+
+#formulario {
+    background-color: grey;
+    border: 2px solid white;
+    width: 85vw;
+    margin: 20px 20px 40px 80px;
+    padding: 10px 10px 50px 10px;
+    border-radius: 2em;
+    display: flex; 
+    justify-content: space-around;
+}
+
+
+#form {
+    padding-top: 30px;
+}
+
+
+.form-input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; 
+    width: 800px; 
+    height: 50px;
+    margin: 10px;
+    padding: 5px; 
+    box-sizing: border-box;
+}
+
+
+.form-textarea {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 16px;
+    width: 800px; /* Ajusta el ancho menos el padding o margen deseado */
+    height: 120px; /* O el valor deseado */
+    margin: 10px;
+    padding: 5px; /* Espaciado interno */
+    box-sizing: border-box;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+
+button{
+    background-color: lightgrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: grey;
+    text-align: center;
+    border: solid 2px grey;
+    border-radius:  4px;
+    margin: 16px 4px;
+    cursor: pointer;
+}

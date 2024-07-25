@@ -1,11 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<link rel="stylesheet" href="./styles/reset.css">
+<link rel="stylesheet" href="./styles/styles.css">
+    <title>Porfolio</title>
 </head>
+
 <body>
-    <h1>Proyecto M1</h1>
+    <header>
+        <div id="titulos">
+            <h1 id="principal">María Paz Rivas</h1>
+            <span>Mi Página Web</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="personal">
+            <section>
+                <h2>Sobre mi</h2>
+                <div>
+                    <p>Soy Argentina, tengo 42 años y vivo con mi familia en Zárate, Provincia de Buenos Aires. Soy Guía de Turismo aunque hace años no me dedico al Turismo. Me gusta viajar por mi país y la fotografía. No tenía conocimientos previos a Henry pero en estos ultimos meses comence a apasionarme. Aún siento que es muy pronto para decidirme pero el frontend por el momento me entusiasma más. </p>
+                </div>
+            </section>
+        </div>
+        
+        <div class="personal">
+            <section>
+                <h2>Mis tecnologías favoritas</h2>
+                <div id="cards-container">
+                
+                    <div class="cards">
+                        <h3 class="title">HTML</h3>
+                        <img src="assets/img/html logo.png" alt="logo de HTML">
+                    </div>
+    
+                    <div class="cards">
+                        <h3 class="title">CSS</h3>
+                        <img src="assets/img/css logo.png" alt="logo de CSS">
+                    </div>
+    
+                    <div class="cards">
+                        <h3 class="title">JavaScript</h3>
+                        <img src="assets/img/JS logo.png" alt="logo de JavaScript">
+                    </div>
+                    
+                </div>
+            </section>
+
+        </div>
+        
+        <div id="formulario">
+            <section>
+                <h2>Mis actividades favoritas</h2>
+               <div>
+                <form>
+                    <div id="form">
+                        <label for="activity-name"></label>
+                        <input type="text" id="activity-name" class="form-input" placeholder="Nombre de la Actividad"> 
+                    </div>
+ 
+                    <div>
+                        <label for="description-name"></label>
+                        <textarea name="" id="description-name" class="form-textarea" placeholder="Describir la Actividad"></textarea>
+                    </div>
+
+                    <div>
+                        <label for="activity-image"></label>
+                        <input type="text" id="activity-name" class="form-input" placeholder="Link de la Imagen">
+                    </div>
+                    
+                    
+                    <button type="submit">AGREGAR ACTIVIDAD</button>
+                </form>
+               </div>
+                
+            
+            </section>
+                    </div>
+
+<footer>HECHO CON ❤</footer>        
+    
+
+    </main>
+    
+<script src="./scripts/index.js"></script>  
+
 </body>
 </html>
