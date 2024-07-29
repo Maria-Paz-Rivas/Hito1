@@ -9,7 +9,7 @@ img {
 }
 
 
-#titulos {
+.titulos {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 1.5em;
         color: white;
@@ -24,7 +24,7 @@ img {
     }
 
 
-#principal {
+.principal {
     font-size: 2.5em;
     font-weight: bold;
 }
@@ -60,6 +60,7 @@ h2{
    align-items: center;
    text-align: center;
    flex-direction: column; 
+
 }
 
 
@@ -69,13 +70,17 @@ h2{
 
 
 #cards-container{
+    display: flex;
+    justify-content: space-around;
     width: 85vw;
     margin: auto;
     margin-top: 1.5em;
     padding: 2em;
     border-radius: 2em;
     display: flex;
-    justify-content: space-around;
+    gap: 30px;  /*espacio entre tarjetas*/
+   
+    
 }
 
 
@@ -105,6 +110,16 @@ p {
     justify-content: space-around;
 }
 
+#cards-formcontainer {
+    display: flex;
+    justify-content: center;
+   text-align: center;
+    padding: 30px; 
+    margin: 40px;
+    gap: 50px;    
+   
+     
+}
 
 #form {
     padding-top: 30px;
@@ -130,23 +145,67 @@ p {
     margin: 10px;
     padding: 5px; /* Espaciado interno */
     box-sizing: border-box;
+};
+
+
+.card-container {
+    border: 2px solid white;  /*Color del borde de la tarjeta*/
+    border-radius: 10px;
+    padding: 25px;
+    background-color: coral;
+    max-width: 300px;  /*Ancho maximo de la tarjeta*/
+    text-align: center; 
+    margin-top: 20px;
+    border-radius: 5px;
+    align-items: center;  
+    
 }
+
+.element-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.element-description {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10 px;
+}
+
+.element-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+
 
 footer {
     color: white;
-    text-align: center;
-    padding: 30px;
-}
-
-
-button{
-    background-color: lightgrey;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
-    color: grey;
+    margin-bottom: 30px;
     text-align: center;
-    border: solid 2px grey;
-    border-radius:  4px;
-    margin: 16px 4px;
-    cursor: pointer;
 }
+
+/* Estilos para el botón de envío */
+#button-submit {
+    background-color: grey; /* Color de fondo del botón */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; /* Color del texto */
+    border: 1px solid white; /* Sin borde */
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 10px 20px; /* Espaciado interno (padding) */
+    text-align: center; /* Centrar el texto dentro del botón */
+    display: inline-block; /* Alineación en línea con otras cajas */
+    font-size: 12px; /* Tamaño de la fuente */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor en forma de mano al pasar sobre el botón */
+    
+}
+
