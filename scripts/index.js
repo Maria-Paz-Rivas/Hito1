@@ -1,4 +1,4 @@
-
+//PUNTO 1
 class Activity {
 
    constructor (id, title, description, imgUrl) {
@@ -17,11 +17,14 @@ class Repository {
     }
 
 
+
+
     getAllActivities () {
              return this.activities
       }
 
     createActivity (title, description, imgUrl){
+
 
           const actividad = new Activity (this.contador, title, description, imgUrl);
           this.activities.push(actividad)
@@ -39,6 +42,7 @@ class Repository {
    }
 }
 
+
 const repository = new Repository ();
 
 const handleDelete = (event) => {
@@ -52,30 +56,35 @@ const handleDelete = (event) => {
 
     const {id, title , description , imgUrl} = activity; 
 
-
+    
+    //PUNTO 3
     const cardContainer = document.createElement ("div");
-
     const titleEle = document.createElement ("h3");
     const descriptionEle = document.createElement ("p");
     const imgUrlEle = document.createElement ("img");
 
+    
+    //PUNTO 4
     titleEle.textContent = title;
     descriptionEle.textContent = description;
     imgUrlEle.src = imgUrl;
     imgUrlEle.alt = `imagen de ${title}`;
 
-//PUNTO 5 Y 8  AGREGO CLASES PARA DARLE ESTILOS EN CSS
+    
+    //PUNTO 5 Y 8  AGREGO CLASES PARA DARLE ESTILOS EN CSS
     cardContainer.classList.add ("card-container")
     titleEle.classList.add ("element-title");
     descriptionEle.classList.add ("element-description");
     imgUrlEle.classList.add ("element-image");
 
-//punto 7
+
+    //PUNTO 7
     cardContainer.appendChild (titleEle)
     cardContainer.appendChild (descriptionEle)
     cardContainer.appendChild (imgUrlEle)
 
-//BUTTON DELETE
+    
+    //BUTTON DELETE
     const buttonDelete = document.createElement ("button")
     buttonDelete.textContent = "X";
     buttonDelete.classList = "button-delete";

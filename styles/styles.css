@@ -110,16 +110,18 @@ p {
     justify-content: space-around;
 }
 
+
 #cards-formcontainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
    text-align: center;
     padding: 30px; 
     margin: 40px;
-    gap: 50px;    
-   
+    gap: 30px;    
      
 }
+
 
 #form {
     padding-top: 30px;
@@ -154,10 +156,12 @@ p {
     padding: 25px;
     background-color: coral;
     max-width: 300px;  /*Ancho maximo de la tarjeta*/
+    display: flex;
     text-align: center; 
-    margin-top: 20px;
+    margin: 20px;
     border-radius: 5px;
-    align-items: center;  
+    align-items: center;
+      
     
 }
 
@@ -172,6 +176,8 @@ p {
 .element-description {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
+    margin: 0;
+    text-align: center;
     color: white;
     margin-bottom: 10 px;
 }
@@ -181,6 +187,9 @@ p {
     height: auto;
     border-radius: 8px;
     border: 2px solid white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 
@@ -192,12 +201,12 @@ footer {
     text-align: center;
 }
 
-/* Estilos para el botón de envío */
+
 #button-submit {
-    background-color: grey; /* Color de fondo del botón */
+    background-color: grey; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white; /* Color del texto */
-    border: 1px solid white; /* Sin borde */
+    color: white; 
+    border: 1px solid white;
     margin-top: 20px;
     margin-left: 10px;
     padding: 10px 20px; /* Espaciado interno (padding) */
@@ -208,4 +217,7 @@ footer {
     cursor: pointer; /* Cursor en forma de mano al pasar sobre el botón */
     
 }
-
+ 
+#button-submit:hover{
+    background-color: rgb(148, 146, 146);
+}
