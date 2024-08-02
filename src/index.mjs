@@ -16,7 +16,7 @@ class Activity {
  
  
  
- //METODOS
+ 
  getAllActivities () {
     return this.activities;
   }

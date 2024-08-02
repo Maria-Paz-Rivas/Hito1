@@ -57,7 +57,7 @@ const handleDelete = (event) => {
     const {id, title , description , imgUrl} = activity; 
 
     
-    //PUNTO 3
+   
     const cardContainer = document.createElement ("div");
     const titleEle = document.createElement ("h3");
     const descriptionEle = document.createElement ("p");

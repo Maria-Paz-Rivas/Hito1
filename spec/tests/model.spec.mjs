@@ -7,7 +7,7 @@ import { Activity, Repository } from "../../src/index.mjs";
 - Debería tener un método llamado createActivity.
 - Debería tener un método llamado deleteActivity.
 - El método llamado createActivity debería poder agregar un elemento al array.
-- El método deleteActivity deberia poder eliminar un elemento del array por ID.
+- El método deleteActivity debería poder eliminar un elemento del array por ID.
 */
 
 describe("La clase Repository", () => {
