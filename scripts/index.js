@@ -71,7 +71,7 @@ const handleDelete = (event) => {
     imgUrlEle.alt = `imagen de ${title}`;
 
     
-    //PUNTO 5 Y 8  AGREGO CLASES PARA DARLE ESTILOS EN CSS
+   
     cardContainer.classList.add ("card-container")
     titleEle.classList.add ("element-title");
     descriptionEle.classList.add ("element-description");
